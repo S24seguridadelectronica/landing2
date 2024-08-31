@@ -1,0 +1,32 @@
+.image-section {
+    position: relative;
+    height: 85vh; /* Aumenta la altura de la sección */
+    background-color: hsl(0, 100%, 50%);
+    color: white;
+    padding: 0px; /* Asegúrate de incluir 'px' para el padding */
+  }
+  
+  
+  .image-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .image-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-image {
+    width: 100%;
+    max-width: 500px;
+    transition: transform 1s ease;
+  }
+  
+  .section-image:hover {
+    transform: scale(1.05);
+  }
+  
