@@ -10,11 +10,12 @@ import CuartaSeccion from './components/CuartaSeccion';
 import QuintaSeccion from './components/QuintaSeccion';
 import Footer from './components/Footer';
 import SextaSeccion from './components/SextaSeccion'; // Importa el nuevo componente
+import Header from './components/Header'; // Importa el nuevo componente Header
 
 function App() {
   const imageUrls = [
-    `${process.env.PUBLIC_URL}/logo192.png`,
-    `${process.env.PUBLIC_URL}/logo192.png`
+    `${process.env.PUBLIC_URL}/prueba.jpg`,
+    `${process.env.PUBLIC_URL}/prueba.jpg`
   ];
 
   const altTexts = ['First image', 'Second image'];
@@ -34,10 +35,11 @@ function App() {
 
   return (
     <div>
+       <Header /> {/* Agrega el nuevo componente Header aquí */}
       <HeroSection
         title="Welcome to Our Amazing Service"
         subtitle="We provide the best solutions for you"
-        imageUrl={`${process.env.PUBLIC_URL}/logo192.png`}
+        imageUrl={`${process.env.PUBLIC_URL}/prueba.jpg`}
         buttonText="Contact Us!"
         onButtonClick={() => alert('Button clicked!')}
       />

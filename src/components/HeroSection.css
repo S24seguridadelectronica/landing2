@@ -1,8 +1,8 @@
 .hero-section {
   position: relative; /* Permite la colocación absoluta del botón */
   height: 100vh;
-  background-color: #007bff;
-  color: white;
+  background-color: hsl(0, 0%, 100%);
+  color: #f70a0a;
   padding: 0; /* Asegura que no haya padding alrededor del contenedor */
 }
 
@@ -96,7 +96,7 @@
 
 .hero-image {
   width: 100%;
-  max-width: 500px; /* Ajusta el tamaño máximo de la imagen si es necesario */
+  max-width: 700px; /* Ajusta el tamaño máximo de la imagen si es necesario */
 }
 
 .floating-button {
