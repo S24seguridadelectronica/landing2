@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
@@ -11,7 +10,7 @@ import Footer from './components/Footer';
 import SextaSeccion from './components/SextaSeccion'; // Importa el nuevo componente
 import Header from './components/Header'; // Importa el nuevo componente Header
 
-
+function App() {  // Función principal que define el componente App
   const altTexts = ['First image', 'Second image'];
 
   const carouselImages = [
@@ -29,11 +28,11 @@ import Header from './components/Header'; // Importa el nuevo componente Header
 
   return (
     <div>
-       <Header /> {/* Agrega el nuevo componente Header aquí */}
+      <Header /> {/* Agrega el nuevo componente Header aquí */}
       <HeroSection
         title="Tenda CP3 pro"
         additionalTitle="Kit de 4 Camaras de 2mpx"  // Añade el texto adicional aquí
-        subtitle="roboticas e inalambricas con deteccion de humanos y boton de llamada de emergencia !"
+        subtitle="roboticas e inalambricas con deteccion de humanos y boton de llamada de emergencia!"
         imageUrl={`${process.env.PUBLIC_URL}/4.png`}
         buttonText="Contact Us!"
         onButtonClick={() => alert('Button clicked!')}
@@ -48,6 +47,6 @@ import Header from './components/Header'; // Importa el nuevo componente Header
       <Footer />
     </div>
   );
-
+}
 
 export default App;
