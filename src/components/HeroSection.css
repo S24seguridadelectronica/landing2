@@ -11,17 +11,17 @@
   flex-direction: column; /* Predeterminado: apila texto e imagen verticalmente */
 }
 
-/* Móviles grandes y en adelante (576px y más) */
+/* Móviles grandes y en adelante (450px y más) */
 @media (min-width: 450px) {
   .hero-row {
     flex-direction: column; /* Mantiene la dirección en columna en móviles grandes */
   }
 }
 
-/* Móviles grandes y en adelante (576px y más) */
+/* Móviles grandes y en adelante (500px y más) */
 @media (min-width: 500px) {
   .hero-row {
-    flex-direction: row; /* Mantiene la dirección en columna en móviles grandes */
+    flex-direction: row; /* Cambia a fila para pantallas más grandes */
   }
 }
 
@@ -71,14 +71,28 @@
 }
 
 .hero-title {
+  position: relative; /* Habilita la manipulación del top */
+  top: -90px; /* Ajusta este valor para mover el título hacia arriba */  
   font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
+  color: rgb(70, 53, 53);
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  position: relative; /* Habilita la manipulación del top */
+  top: -50px; /* Ajusta este valor para mover el título hacia arriba */  
+  font-size: 1.8rem;
   margin-bottom: 30px;
+}
+
+.hero-additional-title {
+  position: relative; /* Habilita la manipulación del top */
+  top: -70px; /* Ajusta este valor para mover el título hacia arriba */  
+  font-size: 3rem; /* Igual que el título principal */
+  font-weight: bold;
+  margin-top: 20px;
+  color: hsl(0, 96%, 39%); /* Ajusta el color si es necesario */
 }
 
 .hero-button {
@@ -96,12 +110,12 @@
 
 .hero-image {
   width: 100%;
-  max-width: 700px; /* Ajusta el tamaño máximo de la imagen si es necesario */
+  max-width: 550px; /* Ajusta el tamaño máximo de la imagen si es necesario */
 }
 
 .floating-button {
   position: absolute; /* Posiciona el botón de forma absoluta respecto al contenedor */
-  top: 100%; /* Ajusta la posición vertical del botón */
+  top: 90%; /* Ajusta la posición vertical del botón */
   left: 50%; /* Ajusta la posición horizontal del botón */
   transform: translate(-50%, -50%); /* Centra el botón en el contenedor */
   z-index: 10; /* Asegura que el botón esté por encima del contenido */

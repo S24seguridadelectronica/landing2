@@ -2,13 +2,13 @@
 .header {
     background-color: #007bff; /* Color de fondo azul */
     color: white;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
   }
   
   .header h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: bold;
   }
   

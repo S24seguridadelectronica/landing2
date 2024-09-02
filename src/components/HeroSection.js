@@ -1,4 +1,3 @@
-// HeroSection.js
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
@@ -6,6 +5,7 @@ import './HeroSection.css'; // Asegúrate de que los estilos estén correctament
 
 function HeroSection({
   title,
+  additionalTitle, // Nuevo prop para el título adicional
   subtitle,
   imageUrl,
   buttonText,
@@ -17,6 +17,7 @@ function HeroSection({
         <Row className="hero-row">
           <Col md={6} className="text-column">
             <h1 className="hero-title">{title}</h1>
+            {additionalTitle && <h2 className="hero-additional-title">{additionalTitle}</h2>} {/* Nuevo título */}
             <p className="hero-subtitle">{subtitle}</p>
           </Col>
           <Col md={6} className="image-column">
@@ -39,6 +40,7 @@ function HeroSection({
 
 HeroSection.propTypes = {
   title: PropTypes.string.isRequired,
+  additionalTitle: PropTypes.string, // Prop adicional para el título
   subtitle: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   buttonText: PropTypes.string,

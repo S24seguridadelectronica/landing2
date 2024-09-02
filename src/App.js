@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import HeroSection from './components/HeroSection';
-import ImageSection from './components/ImageSection';
 import TerceraSeccion from './components/TerceraSeccion';
 import CuartaSeccion from './components/CuartaSeccion';
 import QuintaSeccion from './components/QuintaSeccion';
@@ -12,11 +11,6 @@ import Footer from './components/Footer';
 import SextaSeccion from './components/SextaSeccion'; // Importa el nuevo componente
 import Header from './components/Header'; // Importa el nuevo componente Header
 
-function App() {
-  const imageUrls = [
-    `${process.env.PUBLIC_URL}/prueba.jpg`,
-    `${process.env.PUBLIC_URL}/prueba.jpg`
-  ];
 
   const altTexts = ['First image', 'Second image'];
 
@@ -37,16 +31,14 @@ function App() {
     <div>
        <Header /> {/* Agrega el nuevo componente Header aquí */}
       <HeroSection
-        title="Welcome to Our Amazing Service"
-        subtitle="We provide the best solutions for you"
-        imageUrl={`${process.env.PUBLIC_URL}/prueba.jpg`}
+        title="Tenda CP3 pro"
+        additionalTitle="Kit de 4 Camaras de 2mpx"  // Añade el texto adicional aquí
+        subtitle="roboticas e inalambricas con deteccion de humanos y boton de llamada de emergencia !"
+        imageUrl={`${process.env.PUBLIC_URL}/4.png`}
         buttonText="Contact Us!"
         onButtonClick={() => alert('Button clicked!')}
       />
-      <ImageSection
-        imageUrls={imageUrls}
-        altTexts={altTexts}
-      />
+      
       <TerceraSeccion />
       <CuartaSeccion
         images={carouselImages}
@@ -56,6 +48,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+
 
 export default App;
